@@ -1,0 +1,37 @@
+//select
+//        Student student = session.get(Student.class,1);
+//        System.out.print(student);
+//        List<String > fromStudent =
+//                session.createQuery("from Student").getResultList();
+//        System.out.print(fromStudent);
+
+
+        //insert
+//        Student student = new Student("QQ",2.0);
+//        Student student2 = new Student("FFF",1.3);
+//        session.save(student);
+//        session.save(student2);
+
+        //update
+//        Student student = session.get(Student.class, 1);
+//        student.setName("eeeeeee");
+//        student.setGpa(3.33);
+
+        //delete
+//        session.remove(session.get(Student.class,1));
+
+
+//        Person person = new Person("Era",22);
+//        Passport passport = new Passport(person,23422232);
+//        person.setPassport(passport);
+//        session.save(person);
+
+
+
+movie.setActorList(new ArrayList<>(List.of(actor,actor2)));
+        actor.setMovieList(new ArrayList<>(Collections.singletonList(movie)));
+        actor2.setMovieList(new ArrayList<>(Collections.singletonList(movie)));
+
+        session.save(movie);
+        session.save(actor);
+        session.save(actor2);
